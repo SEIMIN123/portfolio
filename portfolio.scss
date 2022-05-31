@@ -18,12 +18,17 @@
 #root {
 
   width: 100vw;
-  height: 100vh;
+  height: 1000vh;
   @include flex(flex,center,center);
 
+
   & > div {
-    width: 50vw;
-    height: 50vh;
+
+    width: 100vw;
+    height: 1000vh;
+    background: url(./moon.png);
+    background-color: transparent;
+    background-size: cover;
     @include border;
   }
-}
+  }

@@ -7,7 +7,7 @@
 
 #root {
   width: 100vw;
-  height: 100vh;
+  height: 1000vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +20,10 @@
 }
 
 #root > div {
-  width: 50vw;
-  height: 50vh;
+  width: 100vw;
+  height: 1000vh;
+  background: url(./moon.png);
+  background-color: transparent;
+  background-size: cover;
   border: 1px solid black;
 }
