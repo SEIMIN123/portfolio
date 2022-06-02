@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex ($d, $j, $a) {
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin border {
+  border: 1px solid black;
+}
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  @include border;
+  @include flex(flex, center, center);
+
+  &>div {
+
+    width: 40vw;
+    height: 95vh;
+    flex-direction: column;
+    border: 5px solid rgb(255, 255, 255);
+
+    @include flex(flex, center, center);
+  }
+
+  .cir {
+
+    width: 450px;
+    height: 450px;
+    margin-top: -30px;
+    border-radius: 300px;
+    background: url(../pic/profile.jpg);
+    background-size: contain;
+    @include flex(flex, center, center);
+  }
+
+  .text {
+
+    width: 30vw;
+    height: 50vh;
+    font-size: 70px;
+    color: #fff;
+    margin-bottom: -100px;
+    flex-direction: column;
+
+    @include border;
+    @include flex(flex, center, center);
+
+  }
+
+  .text1 {
+
+    font-size: 50px;
+  }
+  .text2 {
+
+    font-size: 50px;
+  }
+}
