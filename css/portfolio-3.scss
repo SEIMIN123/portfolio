@@ -15,6 +15,19 @@
   border: 1px solid black;
 }
 
+/* PC (해상도 1024px)*/ 
+@media all and (min-width:1024px) {
+} 
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
+@media all and (min-width:768px) and (max-width:1023px) {
+} 
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:767px) {
+}
+
+
 #root {
 
   width: 100vw;
@@ -25,8 +38,8 @@
 
   &>div {
 
-    width: 40vw;
-    height: 95vh;
+    width: 30%;
+    height: 80%;
     flex-direction: column;
     border: 5px solid rgb(255, 255, 255);
 
@@ -35,12 +48,13 @@
 
   .cir {
 
-    width: 450px;
-    height: 450px;
+    width: 47%;
+    height: 35%;
     margin-top: -30px;
-    border-radius: 300px;
+    border-radius: 30vw;
     background: url(../pic/profile.jpg);
-    background-size: contain;
+    background-repeat: no-repeat;
+    background-size:contain;
     @include flex(flex, center, center);
   }
 
@@ -48,22 +62,21 @@
 
     width: 30vw;
     height: 50vh;
-    font-size: 70px;
+    font-size: 3vw;
     color: #fff;
     margin-bottom: -100px;
     flex-direction: column;
 
-    @include border;
     @include flex(flex, center, center);
 
   }
 
   .text1 {
 
-    font-size: 50px;
+    font-size: 2vw;
   }
   .text2 {
 
-    font-size: 50px;
+    font-size: 2vw;
   }
 }

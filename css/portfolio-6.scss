@@ -27,42 +27,31 @@
 @media all and (max-width:767px) {
 }
 
+*{margin: 0; padding: 0; box-sizing: border-box;}
 
 #root {
 
   width: 100vw;
   height: 100vh;
-  flex-direction: column;
-  background-color: #000;
+  background-color: black;
 
-  @include border;
   @include flex(flex,center,center);
 
-  .text{
-    width: 23vw;
-    height: 7vw;
-    margin-left: -53vw;
-    @include border;
-  }
-  .text>h1 {
+  & > div {
 
-    font-size: 5vw;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1%;
+  transition: 7s;
+  color: #000;
+  font-family: 'Song Myung', serif;
+  @include flex(flex,center,center);
+  
+  }
+
+  & > div:hover {
     color: #fff;
+    font-size: 500%;
   }
 
-  .box{
-
-    width: 75vw;
-    height: 30vw;
-    border: 5px solid #fff;
-    margin: 10px;
-    @include flex(flex,center,center);
-
-  }
-
-  .box>h1 {
-
-    font-size: 2vw;
-    color: #fff;
-  }
 }

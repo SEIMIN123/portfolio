@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,9 @@
           box-sizing: border-box;
 }
 
+/* PC (해상도 1024px)*/
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 #root {
   width: 100vw;
   height: 100vh;
@@ -22,10 +26,11 @@
 }
 
 #root > div {
-  width: 80vw;
-  height: 100vh;
+  width: 70%;
+  height: 100%;
   background: url(../pic/moonsolo.png);
   background-size: cover;
+  background-repeat: no-repeat;
   border: 1px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -56,7 +61,7 @@
 }
 
 #root > div > h1:hover {
-  font-size: 220px;
+  font-size: 9vw;
   text-align: center;
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);

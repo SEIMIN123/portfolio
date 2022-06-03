@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,9 @@
           box-sizing: border-box;
 }
 
+/* PC (해상도 1024px)*/
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 #root {
   width: 100vw;
   height: 100vh;
@@ -28,12 +32,12 @@
 #root .text {
   width: 23vw;
   height: 7vw;
-  margin-right: -27vw;
+  margin-right: -24vw;
   border: 1px solid black;
 }
 
 #root .text > h1 {
-  font-size: 100px;
+  font-size: 5vw;
   color: #fff;
 }
 
@@ -54,6 +58,6 @@
 }
 
 #root .box > h1 {
-  font-size: 50px;
+  font-size: 2vw;
   color: #fff;
 }
