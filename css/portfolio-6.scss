@@ -37,21 +37,17 @@
 
   @include flex(flex,center,center);
 
-  & > div {
+& > button {
 
-  width: 100vw;
-  height: 100vh;
-  font-size: 1%;
-  transition: 7s;
-  color: #000;
-  font-family: 'Song Myung', serif;
+  width: 20vw;
+  height: 10vh;
+  color: #fff;
+  background-color: #000;
+  font-size: 50px;
+  border: 1px solid white;
+  cursor: pointer;
   @include flex(flex,center,center);
-  
-  }
 
-  & > div:hover {
-    color: #fff;
-    font-size: 500%;
-  }
+}
 
 }

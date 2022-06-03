@@ -47,24 +47,15 @@
   width: 100vw;
   height: 50vh;
   font-size: 1px;
-  color: rgba(255, 255, 255, 0);
-  font-family: Impact,  Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: rgba(0, 0, 0, 0);
+  font-family: 'Times New Roman', Times, serif;
 }
 
 #root > div > h1:hover {
   font-size: 9vw;
   text-align: center;
   cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(43, 43, 43, 0.8);
   -webkit-transition: 4s;
   transition: 4s;
   -webkit-text-stroke: 1px rgba(184, 184, 184, 0.6);
