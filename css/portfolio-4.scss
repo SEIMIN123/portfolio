@@ -65,4 +65,18 @@
     font-size: 2vw;
     color: #fff;
   }
+
+  .box:hover {
+
+    background-color: #fff;
+    border: 5px solid rgb(75, 75, 75);
+    transition: 1s;
+
+  }
+
+  .box>h1:hover{ 
+    color: #000;
+    transition: 1s;
+
+  }
 }

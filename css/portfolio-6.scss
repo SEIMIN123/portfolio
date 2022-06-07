@@ -43,11 +43,19 @@
   height: 10vh;
   color: #fff;
   background-color: #000;
-  font-size: 50px;
+  font-size: 3vw;
+  font-family: 'Times New Roman', Times, serif;
   border: 1px solid white;
-  cursor: pointer;
   @include flex(flex,center,center);
 
+}
+
+& > button:hover {
+
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: 1s;
 }
 
 }

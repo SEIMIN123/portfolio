@@ -50,7 +50,6 @@
   margin-top: -30px;
   border-radius: 30vw;
   background: url(../pic/profile.jpg);
-  background-repeat: no-repeat;
   background-size: contain;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,4 +89,23 @@
 
 #root .text2 {
   font-size: 2vw;
+}
+
+#root .hover:hover {
+  background-color: white;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 5px solid #4b4b4b;
+}
+
+#root .text:hover {
+  color: #000;
+}
+
+#root .text1:hover {
+  color: #000;
+}
+
+#root .text2:hover {
+  color: #000;
 }
