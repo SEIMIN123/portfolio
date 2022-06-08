@@ -66,7 +66,7 @@
   width: 30vw;
   height: 50vh;
   font-size: 3vw;
-  color: #fff;
+  color: black;
   margin-bottom: -100px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -91,8 +91,13 @@
   font-size: 2vw;
 }
 
+#root .cir:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
+}
+
 #root .hover:hover {
-  background-color: white;
+  background-color: black;
   -webkit-transition: 5s;
   transition: 5s;
   border: 5px solid #4b4b4b;
@@ -101,7 +106,7 @@
 #root .text:hover {
   -webkit-transition: 5s;
   transition: 5s;
-  color: #000;
+  color: #fff;
 }
 
 #root .text1:hover {

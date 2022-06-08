@@ -39,8 +39,8 @@
 }
 
 #root .img {
-  width: 800px;
-  height: 800px;
+  width: 700px;
+  height: 700px;
   background: url(../pic/moonsolo.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 }
 
 #root .img > h1:hover {
-  font-size: 5vw;
+  font-size: 4vw;
   text-align: center;
   cursor: pointer;
   color: rgba(43, 43, 43, 0.8);

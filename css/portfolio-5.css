@@ -43,9 +43,10 @@
 
 #root .box {
   width: 50vw;
-  height: 35vw;
+  height: 30vw;
   border: 5px solid #fff;
   margin: 10px;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,18 +60,11 @@
 
 #root .box > h1 {
   font-size: 2vw;
-  color: #fff;
 }
 
 #root .box:hover {
-  background-color: #fff;
   border: 5px solid #4b4b4b;
   -webkit-transition: 5s;
   transition: 5s;
-}
-
-#root .box > h1:hover {
-  color: #000;
-  -webkit-transition: 5s;
-  transition: 5s;
+  color: white;
 }

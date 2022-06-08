@@ -53,30 +53,28 @@
   .box{
 
     width: 50vw;
-    height: 35vw;
+    height: 30vw;
     border: 5px solid #fff;
     margin: 10px;
+    color: rgb(0, 0, 0);
     @include flex(flex,center,center);
-
+    
   }
-
+  
   .box>h1 {
-
+    
     font-size: 2vw;
-    color: #fff;
   }
 
   .box:hover {
 
-    background-color: #fff;
     border: 5px solid rgb(75, 75, 75);
     transition: 5s;
+    color: rgb(255, 255, 255);
 
   }
 
-  .box>h1:hover{ 
-    color: #000;
-    transition: 5s;
 
-  }
+
+
 }

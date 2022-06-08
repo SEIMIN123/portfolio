@@ -37,25 +37,23 @@
 
   @include flex(flex,center,center);
 
-& > button {
+  & > button {
 
-  width: 20vw;
-  height: 10vh;
-  color: #fff;
-  background-color: #000;
-  font-size: 3vw;
-  font-family: 'Times New Roman', Times, serif;
-  border: 1px solid white;
-  @include flex(flex,center,center);
+    width: 20vw;
+    height: 10vh;
+    background-color: #000;
+    font-size: 3vw;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid white;
+    @include flex(flex,center,center);
+  
+  }
 
-}
+  & > button:hover {
 
-& > button:hover {
-
-  background-color: #fff;
-  color: #000;
-  cursor: pointer;
-  transition: 5s;
-}
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 5s;
+  }
 
 }

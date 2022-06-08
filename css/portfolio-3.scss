@@ -59,7 +59,7 @@
     width: 30vw;
     height: 50vh;
     font-size: 3vw;
-    color: #fff;
+    color: rgb(0, 0, 0);
     margin-bottom: -100px;
     flex-direction: column;
 
@@ -77,9 +77,14 @@
     font-size: 2vw;
   }
 
+  .cir:hover {
+
+    transition: 5s;
+  }
+
   .hover:hover {
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     transition: 5s;
     border: 5px solid rgb(75, 75, 75);
   }
@@ -87,7 +92,7 @@
   .text:hover {
     
     transition: 5s;
-    color: #000;
+    color: #fff;
   }
 
   .text1:hover {
