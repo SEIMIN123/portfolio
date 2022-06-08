@@ -44,13 +44,13 @@
   background-color: #000;
   font-size: 3vw;
   font-family: 'Times New Roman', Times, serif;
-  border: 1px solid white;
   @include flex(flex,center,center);
-
+  
 }
 
 & > button:hover {
-
+  
+  border: 1px solid white;
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 5s;

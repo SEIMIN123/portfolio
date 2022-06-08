@@ -37,7 +37,6 @@
   background-color: #000;
   font-size: 3vw;
   font-family: 'Times New Roman', Times, serif;
-  border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,6 +49,7 @@
 }
 
 #root > button:hover {
+  border: 1px solid white;
   color: white;
   cursor: pointer;
   -webkit-transition: 5s;
