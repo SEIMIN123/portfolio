@@ -65,12 +65,12 @@
 #root .box:hover {
   background-color: #fff;
   border: 5px solid #4b4b4b;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 5s;
+  transition: 5s;
 }
 
 #root .box > h1:hover {
   color: #000;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 5s;
+  transition: 5s;
 }

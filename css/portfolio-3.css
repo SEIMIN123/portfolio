@@ -93,19 +93,25 @@
 
 #root .hover:hover {
   background-color: white;
-  -webkit-transition: 1s;
-  transition: 1s;
+  -webkit-transition: 5s;
+  transition: 5s;
   border: 5px solid #4b4b4b;
 }
 
 #root .text:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
   color: #000;
 }
 
 #root .text1:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
   color: #000;
 }
 
 #root .text2:hover {
+  -webkit-transition: 5s;
+  transition: 5s;
   color: #000;
 }
