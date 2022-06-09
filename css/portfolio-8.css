@@ -10,23 +10,79 @@
 /* 태블릿 가로, 태블릿 세로 (해상도 768px, 1023px)*/
 /* 모바일 가로, 모바일 세로 (해상도 480px, 767px)*/
 @-webkit-keyframes fadein {
-  from {
+  0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
   }
-  to {
-    opacity: 3;
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes fadein {
-  from {
+  0% {
     opacity: 0;
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
   }
-  to {
-    opacity: 3;
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -42,6 +98,10 @@
   height: 100vh;
   background: url(../pic/31.gif);
   background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,15 +113,55 @@
           align-items: center;
 }
 
-#root > div {
+#root .text {
   width: 50vw;
-  height: 80vh;
+  height: 20vh;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 45px;
+  font-size: 40px;
   color: #fff;
   margin-left: -600px;
-  -webkit-animation: fadein 8s ease-in-out;
-          animation: fadein 8s ease-in-out;
+  -webkit-animation: fadein 10s ease-in-out;
+          animation: fadein 10s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .text1 {
+  width: 50vw;
+  height: 30vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: #fff;
+  margin-left: -700px;
+  -webkit-animation: fadein1 10s ease-in-out;
+          animation: fadein1 10s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .text2 {
+  width: 60vw;
+  height: 20vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: #fff;
+  margin-left: -670px;
+  -webkit-animation: fadein2 15s ease-in-out;
+          animation: fadein2 15s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
