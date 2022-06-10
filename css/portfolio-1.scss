@@ -56,7 +56,7 @@
 
   }
 
-  .img>h1 {
+  .img > h1 {
     width: 100%;
     height: 8vw;
     font-size: 1px;
@@ -65,10 +65,9 @@
     
   }
 
-  .img>h1:hover {
+  .img > h1:hover {
     font-size: 4vw;
     text-align: center;
-    position: absolute;
     cursor: pointer;
     color: rgba(43, 43, 43, 0.8);
     transition: 4s;
