@@ -40,8 +40,8 @@
 
 & > button {
 
-  width: 50vw;
-  height: 20vh;
+  width: 20vw;
+  height: 10vh;
   color: #000;
   border: 1px solid #000;
   background-color: #ECE93B;
@@ -53,10 +53,8 @@
 }
 
 & > button:hover {
-  border: 1px solid #fff;
-  font-size: 6vw;
-  transition: 2s;
-  color:#fff;
+  color: #fff;
+  transition: 1s;
 }
 
 }

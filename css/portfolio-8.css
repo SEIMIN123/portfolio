@@ -32,8 +32,8 @@
 }
 
 #root > button {
-  width: 50vw;
-  height: 20vh;
+  width: 20vw;
+  height: 10vh;
   color: #000;
   border: 1px solid #000;
   background-color: #ECE93B;
@@ -52,9 +52,7 @@
 }
 
 #root > button:hover {
-  border: 1px solid #fff;
-  font-size: 6vw;
-  -webkit-transition: 2s;
-  transition: 2s;
   color: #fff;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
