@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* PC (해상도 1024px)*/
@@ -14,36 +13,19 @@
   height: 100vh;
   background-color: #000;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root > div {
   width: 30%;
   height: 80%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border: 5px solid white;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
+  border: 5px solid rgb(255, 255, 255);
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .cir {
   width: 47%;
   height: 35%;
@@ -51,72 +33,44 @@
   border-radius: 30vw;
   background: url(../pic/profile.jpg);
   background-size: contain;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .text {
   width: 30vw;
   height: 50vh;
   font-size: 3vw;
-  color: black;
+  color: rgb(0, 0, 0);
   margin-bottom: -100px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-direction: column;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .text1 {
   font-size: 2vw;
 }
-
 #root .text2 {
   font-size: 2vw;
 }
-
 #root .cir:hover {
-  -webkit-transition: 5s;
   transition: 5s;
 }
-
 #root .hover:hover {
-  background-color: black;
-  -webkit-transition: 5s;
+  background-color: rgb(0, 0, 0);
   transition: 5s;
-  border: 5px solid #4b4b4b;
+  border: 5px solid rgb(75, 75, 75);
 }
-
 #root .text:hover {
-  -webkit-transition: 5s;
   transition: 5s;
   color: #fff;
 }
-
 #root .text1:hover {
-  -webkit-transition: 5s;
   transition: 5s;
   color: #000;
 }
-
 #root .text2:hover {
-  -webkit-transition: 5s;
   transition: 5s;
   color: #000;
 }

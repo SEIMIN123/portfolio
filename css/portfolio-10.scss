@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex ($d, $j, $a) {
+
+  display: ($d);
+  justify-content: ($j);
+  align-items: ($a);
+}
+
+@mixin border($p, $s, $c) {
+  border: ($p) ($s) ($c);
+}
+
+#root {
+
+  width: 100vw;
+  height: 100vh;
+  
+}

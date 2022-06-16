@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* PC (해상도 1024px)*/
@@ -12,46 +11,30 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #root {
   width: 100vw;
   height: 100vh;
   background-color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root > button {
   width: 20vw;
   height: 10vh;
   background-color: #000;
   font-size: 3vw;
-  font-family: 'Times New Roman', Times, serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  font-family: "Times New Roman", Times, serif;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root > button:hover {
   border: 1px solid white;
-  color: white;
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  -webkit-transition: 5s;
   transition: 5s;
 }

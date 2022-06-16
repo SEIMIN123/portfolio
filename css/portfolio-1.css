@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* PC (해상도 1024px)*/
@@ -11,33 +10,23 @@
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @-webkit-keyframes img {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes img {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
-
 #root {
   width: 100vw;
   height: 100vh;
   background-color: #000;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .img {
   width: 700px;
   height: 700px;
@@ -46,34 +35,24 @@
   background-repeat: no-repeat;
   -webkit-animation: img 300s linear infinite;
           animation: img 300s linear infinite;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
   border: 1px solid black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 #root .img > h1 {
   width: 100%;
   height: 8vw;
   font-size: 1px;
   color: rgba(0, 0, 0, 0);
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
 }
-
 #root .img > h1:hover {
   font-size: 4vw;
   text-align: center;
   cursor: pointer;
   color: rgba(43, 43, 43, 0.8);
-  -webkit-transition: 4s;
   transition: 4s;
   -webkit-text-stroke: 1px rgba(184, 184, 184, 0.6);
 }
