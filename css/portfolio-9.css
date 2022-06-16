@@ -63,7 +63,7 @@
   50% {
     opacity: 0;
   }
-  80% {
+  90% {
     opacity: 0;
   }
   100% {
@@ -78,7 +78,7 @@
   50% {
     opacity: 0;
   }
-  80% {
+  90% {
     opacity: 0;
   }
   100% {
@@ -105,70 +105,75 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#root .con {
+  margin-top: 13vh;
+  margin-left: 10vw;
 }
 
 #root .text {
-  width: 50vw;
+  width: 40vw;
   height: 20vh;
+  text-align: left;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 2vw;
   color: #fff;
-  margin-left: -600px;
   -webkit-animation: fadein 10s ease-in-out;
           animation: fadein 10s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 #root .text1 {
-  width: 50vw;
+  width: 40vw;
   height: 30vh;
+  text-align: left;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 2vw;
   color: #fff;
-  margin-left: -700px;
   -webkit-animation: fadein1 10s ease-in-out;
           animation: fadein1 10s ease-in-out;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 #root .text2 {
-  width: 60vw;
+  width: 40vw;
   height: 20vh;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 40px;
+  font-size: 2vw;
+  text-align: left;
   color: #fff;
-  margin-left: -670px;
   -webkit-animation: fadein2 15s ease-in-out;
           animation: fadein2 15s ease-in-out;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;

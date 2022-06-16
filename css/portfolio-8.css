@@ -31,11 +31,10 @@
           align-items: center;
 }
 
-#root > button {
+#root > div {
   width: 20vw;
   height: 10vh;
   color: #000;
-  border: 1px solid #000;
   background-color: #ECE93B;
   font-family: 'Permanent Marker', cursive;
   font-size: 3vw;
@@ -51,8 +50,10 @@
           align-items: center;
 }
 
-#root > button:hover {
-  color: #fff;
-  -webkit-transition: 1s;
-  transition: 1s;
+#root > div:hover {
+  width: 50vw;
+  height: 10vh;
+  font-size: 7vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }

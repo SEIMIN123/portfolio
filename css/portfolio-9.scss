@@ -63,7 +63,7 @@
     opacity: 0;
   }
 
-  80% {
+  90% {
     opacity: 0;
   }
 
@@ -87,43 +87,49 @@
   background: url(../pic/31.gif);
   background-size: cover;
   flex-direction: column;
-  @include flex(flex, center, center);
+  @include flex(flex, flex-start, flex-start);
+
+  .con {
+
+    margin-top: 13vh;
+    margin-left: 10vw;
+  }
 
   .text {
 
-    width: 50vw;
+    width: 40vw;
     height: 20vh;
+    text-align: left;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 2vw;
     color: #fff;
-    margin-left: -600px;
     animation: fadein 10s ease-in-out;
-    @include flex(flex, center, center);
+    @include flex(flex, flex-start, center);
 
   }
 
   .text1 {
 
-    width: 50vw;
+    width: 40vw;
     height: 30vh;
+    text-align: left;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 2vw;
     color: #fff;
-    margin-left: -700px;
     animation: fadein1 10s ease-in-out;
-    @include flex(flex, center, center);
+    @include flex(flex, flex-start, center);
   }
 
   .text2 {
 
-    width: 60vw;
+    width: 40vw;
     height: 20vh;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 2vw;
+    text-align: left;
     color: #fff;
-    margin-left: -670px;
     animation: fadein2 15s ease-in-out;
     cursor: pointer;
-    @include flex(flex, center, center);
+    @include flex(flex, flex-start, center);
   }
 }

@@ -12,20 +12,22 @@
 <body>
   <div id="root">
     <audio src="../pic/piano.mp3" autoplay loop></audio>
-    <div class="text">제 인생의 첫 포트폴리오를 함께 해주셔서 <br><br> 감사합니다.<br><br>
+    <div class="con">
+      <div class="text">제 인생의 첫 포트폴리오를 함께 해주셔서 <br><br> 감사합니다.<br><br>
+      </div>
+      <div class="text1">아직 부족한 점이 많습니다.<br><br>그래도 처음으로 만든 작품이다보니<br><br>기분은 좋네요.
+      </div>
+      <div class="text2">그런데 아직 하나가 더 남았습니다.
+      </div>
     </div>
-    <div class="text1">아직 부족한 점이 많습니다.<br><br>그래도 처음으로 만든 작품이다보니<br><br>기분은 좋네요.
-    </div> 
-    <div class="text2">그런데 아직 하나가 더 남았습니다.
-    </div>
-    </div>
-    <script>
-      const text = document.querySelector('.text2');
-      text.addEventListener('click', function(){
-        let page = '../html/portfolio-8.html';
-        location.href = page;
-      });
-    </script>
+  </div>
+  <script>
+    const text = document.querySelector('.text2');
+    text.addEventListener('click', function () {
+      let page = '../html/portfolio-8.html';
+      location.href = page;
+    });
+  </script>
 </body>
 
 </html>

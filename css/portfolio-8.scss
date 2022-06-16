@@ -38,12 +38,11 @@
 
   @include flex(flex,center,center);
 
-& > button {
+& > div {
 
   width: 20vw;
   height: 10vh;
   color: #000;
-  border: 1px solid #000;
   background-color: #ECE93B;
   font-family: 'Permanent Marker', cursive;
   font-size: 3vw;
@@ -52,9 +51,11 @@
   
 }
 
-& > button:hover {
-  color: #fff;
-  transition: 1s;
+& > div:hover {
+  width: 50vw;
+  height: 10vh;
+  font-size: 7vw;
+  transition: 0.5s;
 }
 
 }
