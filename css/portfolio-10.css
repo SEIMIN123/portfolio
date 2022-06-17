@@ -52,6 +52,7 @@
 #root {
   width: 100vw;
   height: 120vh;
+  font-family: "Nanum Pen Script", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,10 +82,18 @@
 #root #text {
   width: 100vw;
   height: 100vh;
-  font-size: 60px;
+  font-size: 3vw;
   color: #000;
-  font-family: "Nanum Pen Script", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#root #return {
+  width: 12.5vw;
+  height: 5vh;
+  position: absolute;
+  margin-right: -80vw;
+  margin-bottom: -95vh;
+  font-size: 2vw;
+  cursor: pointer;
 }
