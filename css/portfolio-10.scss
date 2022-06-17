@@ -11,13 +11,78 @@
   align-items: ($a);
 }
 
-@mixin border($p, $s, $c) {
-  border: ($p) ($s) ($c);
+@mixin border {
+  border: 1px solid black;
+}
+
+@keyframes pic {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+
+  }
+}
+
+@keyframes pic1 {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+
+  }
+
+  100% {
+    opacity: 1;
+
+  }
 }
 
 #root {
 
   width: 100vw;
-  height: 100vh;
-  
+  height: 120vh;
+  @include flex(flex, center, center);
+
+  #pic {
+
+    width: 40vw;
+    height: 50vh;
+    margin-right: -45vw;
+    background: url(../pic/tom.gif);  
+    background-size: cover;
+    border-radius: 10px;
+    animation: pic 39s;
+    position: absolute;
+  }
+
+  #pic1 {
+
+    width: 40vw;
+    height: 50vh;
+    margin-left: -45vw;
+    border-radius: 10px;
+    background: url(../pic/jerry.gif);
+    background-size: cover;
+    animation: pic1 39s;
+    position: absolute;
+  }
+
+  #text {
+    width: 100vw;
+    height: 100vh;
+    font-size: 60px;
+    color: #000;
+    font-family: 'Nanum Pen Script', cursive;
+    @include flex(flex, center, center);
+  }
 }

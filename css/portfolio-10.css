@@ -4,7 +4,87 @@
   box-sizing: border-box;
 }
 
+@-webkit-keyframes pic {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes pic {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes pic1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes pic1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #root {
   width: 100vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #pic {
+  width: 40vw;
+  height: 50vh;
+  margin-right: -45vw;
+  background: url(../pic/tom.gif);
+  background-size: cover;
+  border-radius: 10px;
+  -webkit-animation: pic 39s;
+          animation: pic 39s;
+  position: absolute;
+}
+#root #pic1 {
+  width: 40vw;
+  height: 50vh;
+  margin-left: -45vw;
+  border-radius: 10px;
+  background: url(../pic/jerry.gif);
+  background-size: cover;
+  -webkit-animation: pic1 39s;
+          animation: pic1 39s;
+  position: absolute;
+}
+#root #text {
+  width: 100vw;
   height: 100vh;
+  font-size: 60px;
+  color: #000;
+  font-family: "Nanum Pen Script", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
