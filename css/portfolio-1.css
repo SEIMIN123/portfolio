@@ -28,8 +28,8 @@
   align-items: center;
 }
 #root .img {
-  width: 700px;
-  height: 700px;
+  width: 35.4vw;
+  height: 70.2vh;
   background: url(../pic/moonsolo.png);
   background-size: cover;
   background-repeat: no-repeat;
