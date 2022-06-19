@@ -17,9 +17,20 @@
     transform: rotate(360deg);
   }
 }
-@keyframes img {
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
   100% {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 /* PC (해상도 1024px)*/
@@ -91,12 +102,14 @@
   }
   #root .img > h1 {
     width: 80vw;
-    height: 20vh;
-    font-size: 6vh;
-    color: rgba(255, 255, 255, 0.8);
+    height: 8vh;
+    font-size: 9.5vw;
+    margin-top: -10vh;
+    color: rgb(255, 255, 255);
     font-family: "Times New Roman", Times, serif;
-    transition: 5s;
-    -webkit-text-stroke: 1px rgba(184, 184, 184, 0.6);
+    -webkit-animation: fade 5s;
+            animation: fade 5s;
     text-align: center;
+    -webkit-text-stroke: 8px rgba(184, 184, 184, 0.6);
   }
 }
