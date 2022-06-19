@@ -5,44 +5,102 @@
   box-sizing: border-box;
 }
 
-/* PC (해상도 1024px)*/
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-#root {
-  width: 100vw;
-  height: 100vh;
-  flex-direction: column;
-  background-color: #000;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-#root .text {
-  width: 23vw;
-  height: 7vw;
-  margin-right: -24vw;
-  border: 1px solid black;
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-#root .text > h1 {
-  font-size: 5vw;
-  color: #fff;
+/* PC (해상도 1024px)*/
+@media all and (min-width: 1024px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #000;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .text {
+    width: 23vw;
+    height: 7vw;
+    margin-right: -24vw;
+    border: 1px solid black;
+  }
+  #root .text > h1 {
+    font-size: 5vw;
+    color: #fff;
+  }
+  #root .box {
+    width: 50vw;
+    height: 30vw;
+    border: 5px solid #fff;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .box > h1 {
+    font-size: 2vw;
+  }
+  #root .box:hover {
+    border: 5px solid rgb(75, 75, 75);
+    transition: 5s;
+    color: rgb(255, 255, 255);
+  }
 }
-#root .box {
-  width: 50vw;
-  height: 30vw;
-  border: 5px solid #fff;
-  margin: 10px;
-  color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#root .box > h1 {
-  font-size: 2vw;
-}
-#root .box:hover {
-  border: 5px solid rgb(75, 75, 75);
-  transition: 5s;
-  color: rgb(255, 255, 255);
+@media all and (min-width: 480px) and (max-width: 767px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #000;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .text {
+    width: 23vw;
+    height: 7vw;
+    margin-right: -40vw;
+    border: 1px solid black;
+  }
+  #root .text > h1 {
+    font-size: 8vw;
+    margin-left: -8vw;
+    margin-top: -3vh;
+    color: #fff;
+  }
+  #root .box {
+    width: 80vw;
+    height: 50vw;
+    border: 5px solid #fff;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root .box > h1 {
+    font-size: 2.9vw;
+    -webkit-animation: fade 10s;
+            animation: fade 10s;
+    color: rgb(255, 255, 255);
+  }
 }

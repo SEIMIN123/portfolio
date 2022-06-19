@@ -15,97 +15,172 @@
   border: 1px solid black;
 }
 
-/* PC (해상도 1024px)*/
-@media all and (min-width:1024px) {}
-
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {}
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-@media all and (max-width:767px) {}
+@mixin mobile {
+  @media all and (min-width:480px) and (max-width:767px) {
+    @content;
+  }
+}
 
+@mixin pc {
 
-#root {
+  /* PC (해상도 1024px)*/
+  @media all and (min-width:1024px) {
+    @content;
+  }
+}
 
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  @include border;
-  @include flex(flex, center, center);
+@keyframes fade {
 
-  &>div {
-
-    width: 30%;
-    height: 80%;
-    flex-direction: column;
-    border: 5px solid rgb(255, 255, 255);
-
-    @include flex(flex, center, center);
+  0% {
+    opacity: 0;
   }
 
-  .cir {
-
-    width: 47%;
-    height: 35%;
-    margin-top: -30px;
-    border-radius: 30vw;
-    background: url(../pic/profile.jpg);
-    background-size: contain;
-    @include flex(flex, center, center);
+  100% {
+    opacity: 1;
   }
+}
 
-  .text {
+@include pc {
+  #root {
 
-    width: 30vw;
-    height: 50vh;
-    font-size: 3vw;
-    color: rgb(0, 0, 0);
-    margin-bottom: -100px;
-    flex-direction: column;
-
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    @include border;
     @include flex(flex, center, center);
 
+    &>div {
+
+      width: 30%;
+      height: 80%;
+      flex-direction: column;
+      border: 5px solid rgb(255, 255, 255);
+
+      @include flex(flex, center, center);
+    }
+
+    .cir {
+
+      width: 47%;
+      height: 35%;
+      margin-top: -30px;
+      border-radius: 30vw;
+      background: url(../pic/profile.jpg);
+      background-size: contain;
+      @include flex(flex, center, center);
+    }
+
+    .text {
+
+      width: 30vw;
+      height: 50vh;
+      font-size: 3vw;
+      color: rgb(0, 0, 0);
+      margin-bottom: -100px;
+      flex-direction: column;
+
+      @include flex(flex, center, center);
+
+    }
+
+    .text1 {
+
+      font-size: 2vw;
+    }
+
+    .text2 {
+
+      font-size: 2vw;
+    }
+
+    .cir:hover {
+
+      transition: 5s;
+    }
+
+    .hover:hover {
+
+      background-color: rgb(0, 0, 0);
+      transition: 5s;
+      border: 5px solid rgb(75, 75, 75);
+    }
+
+    .text:hover {
+
+      transition: 5s;
+      color: #fff;
+    }
+
+    .text1:hover {
+
+      transition: 5s;
+      color: #000;
+    }
+
+    .text2:hover {
+
+      transition: 5s;
+      color: #000;
+    }
   }
+}
 
-  .text1 {
+@include mobile {
 
-    font-size: 2vw;
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    @include border;
+    @include flex(flex, center, center);
+
+    &>div {
+
+      width: 80vw;
+      height: 80vh;
+      flex-direction: column;
+      border: 5px solid rgb(255, 255, 255);
+
+      @include flex(flex, center, center);
+    }
+
+    .cir {
+
+      width: 60%;
+      height: 35%;
+      border-radius: 30vw;
+      background: url(../pic/profile.jpg);
+      background-size: contain;
+      @include flex(flex, center, center);
+    }
+
+    .text {
+
+      width: 100vw;
+      height: 50vh;
+      font-size: 7vw;
+      color: #fff;
+      margin-top: -4vh;
+      animation: fade 10s;
+      flex-direction: column;
+
+      @include flex(flex, center, center);
+
+    }
+
+    .text1 {
+
+      font-size: 5vw;
+    }
+
+    .text2 {
+
+      font-size: 5vw;
+    }
   }
-
-  .text2 {
-
-    font-size: 2vw;
-  }
-
-  .cir:hover {
-
-    transition: 5s;
-  }
-
-  .hover:hover {
-
-    background-color: rgb(0, 0, 0);
-    transition: 5s;
-    border: 5px solid rgb(75, 75, 75);
-  }
-
-  .text:hover {
-    
-    transition: 5s;
-    color: #fff;
-  }
-
-  .text1:hover {
-
-    transition: 5s;
-    color: #000;
-  }
-
-  .text2:hover {
-    
-    transition: 5s;
-    color: #000;
-  }
-
-
 }

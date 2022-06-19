@@ -62,5 +62,7 @@
   margin-bottom: -95vh;
   font-size: 2vw;
   color: #fff;
+  -webkit-animation: pic1 39s;
+          animation: pic1 39s;
   cursor: pointer;
 }
