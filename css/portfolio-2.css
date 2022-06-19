@@ -63,7 +63,7 @@
     -webkit-text-stroke: 1px rgba(184, 184, 184, 0.6);
   }
 }
-@media all and (min-width: 480px) and (max-width: 767px) {
+@media all and (max-width: 800px) {
   #root {
     width: 100vw;
     height: 100vh;
