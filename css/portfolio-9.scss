@@ -33,14 +33,6 @@
   }
 }
 
-@mixin pc {
-
-  /* PC (해상도 1024px)*/
-  @media all and (min-width:1024px) {
-    @content;
-  }
-}
-
 @keyframes fadein {
   0% {
     opacity: 0;
@@ -90,63 +82,117 @@
 
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@include pc {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    background: url(../pic/31.gif);
+    background-size: cover;
+    flex-direction: column;
+    @include flex(flex, flex-start, flex-start);
+
+    .con {
+
+      margin-top: 13vh;
+      margin-left: 10vw;
+    }
+
+    .text {
+
+      width: 40vw;
+      height: 20vh;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2vw;
+      color: #fff;
+      animation: fadein 10s ease-in-out;
+      @include flex(flex, flex-start, center);
+
+    }
+
+    .text1 {
+
+      width: 40vw;
+      height: 30vh;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2vw;
+      color: #fff;
+      animation: fadein1 10s ease-in-out;
+      @include flex(flex, flex-start, center);
+    }
+
+    .text2 {
+
+      width: 40vw;
+      height: 20vh;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 2vw;
+      text-align: left;
+      color: #fff;
+      animation: fadein2 15s ease-in-out;
+      cursor: pointer;
+      @include flex(flex, flex-start, center);
+    }
+  }
 }
 
+@include mobile {
+  #root {
 
-#root {
+    width: 100vw;
+    height: 100vh;
+    background: url(../pic/31.gif);
+    background-size: cover;
+    flex-direction: column;
+    background-position: 55% 100%;
+    background-attachment:initial;
+    background-repeat: no-repeat; 
+    @include flex(flex, flex-start, flex-start);
 
-  width: 100vw;
-  height: 100vh;
-  background: url(../pic/31.gif);
-  background-size: cover;
-  flex-direction: column;
-  @include flex(flex, flex-start, flex-start);
+    .con {
 
-  .con {
+      margin-top: 13vh;
+      margin-left: 10vw;
+    }
 
-    margin-top: 13vh;
-    margin-left: 10vw;
-  }
+    .text {
 
-  .text {
+      width: 59vw;
+      height: 25vh;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 5vw;
+      color: #fff;
+      animation: fadein 10s ease-in-out;
+      @include flex(flex, flex-start, center);
 
-    width: 40vw;
-    height: 20vh;
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2vw;
-    color: #fff;
-    animation: fadein 10s ease-in-out;
-    @include flex(flex, flex-start, center);
+    }
 
-  }
+    .text1 {
 
-  .text1 {
+      width: 90vw;
+      height: 35vh;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 5vw;
+      white-space: pre;
+      color: #fff;
+      animation: fadein 10s ease-in-out;
+      @include flex(flex, flex-start, center);
+    }
 
-    width: 40vw;
-    height: 30vh;
-    text-align: left;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2vw;
-    color: #fff;
-    animation: fadein1 10s ease-in-out;
-    @include flex(flex, flex-start, center);
-  }
+    .text2 {
 
-  .text2 {
-
-    width: 40vw;
-    height: 20vh;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2vw;
-    text-align: left;
-    color: #fff;
-    animation: fadein2 15s ease-in-out;
-    cursor: pointer;
-    @include flex(flex, flex-start, center);
+      width: 90vw;
+      height: 10vh;
+      text-align: left;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 5vw;
+      color: #fff;
+      animation: fadein 10s ease-in-out;
+      @include flex(flex, flex-start, center);
+    }
   }
 }

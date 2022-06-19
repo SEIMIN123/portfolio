@@ -79,63 +79,119 @@
     opacity: 1;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* PC (해상도 1024px)*/
+@media all and (min-width: 1024px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background: url(../pic/31.gif);
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #root .con {
+    margin-top: 13vh;
+    margin-left: 10vw;
+  }
+  #root .text {
+    width: 40vw;
+    height: 20vh;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2vw;
+    color: #fff;
+    -webkit-animation: fadein 10s ease-in-out;
+            animation: fadein 10s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #root .text1 {
+    width: 40vw;
+    height: 30vh;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2vw;
+    color: #fff;
+    -webkit-animation: fadein1 10s ease-in-out;
+            animation: fadein1 10s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #root .text2 {
+    width: 40vw;
+    height: 20vh;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 2vw;
+    text-align: left;
+    color: #fff;
+    -webkit-animation: fadein2 15s ease-in-out;
+            animation: fadein2 15s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }
-
-#root {
-  width: 100vw;
-  height: 100vh;
-  background: url(../pic/31.gif);
-  background-size: cover;
-  flex-direction: column;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-#root .con {
-  margin-top: 13vh;
-  margin-left: 10vw;
-}
-#root .text {
-  width: 40vw;
-  height: 20vh;
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2vw;
-  color: #fff;
-  -webkit-animation: fadein 10s ease-in-out;
-          animation: fadein 10s ease-in-out;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-#root .text1 {
-  width: 40vw;
-  height: 30vh;
-  text-align: left;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2vw;
-  color: #fff;
-  -webkit-animation: fadein1 10s ease-in-out;
-          animation: fadein1 10s ease-in-out;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-#root .text2 {
-  width: 40vw;
-  height: 20vh;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 2vw;
-  text-align: left;
-  color: #fff;
-  -webkit-animation: fadein2 15s ease-in-out;
-          animation: fadein2 15s ease-in-out;
-  cursor: pointer;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+@media all and (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background: url(../pic/31.gif);
+    background-size: cover;
+    flex-direction: column;
+    background-position: 55% 100%;
+    background-attachment: initial;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #root .con {
+    margin-top: 13vh;
+    margin-left: 10vw;
+  }
+  #root .text {
+    width: 59vw;
+    height: 25vh;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 5vw;
+    color: #fff;
+    -webkit-animation: fadein 10s ease-in-out;
+            animation: fadein 10s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #root .text1 {
+    width: 90vw;
+    height: 35vh;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 5vw;
+    white-space: pre;
+    color: #fff;
+    -webkit-animation: fadein 10s ease-in-out;
+            animation: fadein 10s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #root .text2 {
+    width: 90vw;
+    height: 10vh;
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 5vw;
+    color: #fff;
+    -webkit-animation: fadein 10s ease-in-out;
+            animation: fadein 10s ease-in-out;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }

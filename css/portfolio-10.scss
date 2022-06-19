@@ -14,6 +14,7 @@
 @mixin border {
   border: 1px solid black;
 }
+
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 @media all and (min-width:768px) and (max-width:1023px) {}
 
@@ -48,43 +49,108 @@
   }
 }
 
-#root {
+@keyframes pic2 {
+  0% {
+    opacity: 1;
+  }
 
-  width: 100vw;
-  height: 120vh;
-  font-family: 'Nanum Pen Script', cursive;
+  50% {
+    opacity: 1;
 
-  @include flex(flex, center, center);
+  }
 
-  #pic1 {
+  100% {
+    opacity: 0;
+
+  }
+}
+
+
+@include pc {
+  #root {
 
     width: 100vw;
     height: 120vh;
-    border-radius: 10px;
-    background: url(../pic/jerry.gif);
-    background-size: cover;
-    animation: pic1 39s;
-    position: absolute;
-  }
+    font-family: 'Nanum Pen Script', cursive;
 
-  #text {
+    @include flex(flex, center, center);
+
+    #pic1 {
+
+      width: 100vw;
+      height: 120vh;
+      border-radius: 10px;
+      background: url(../pic/jerry.gif);
+      background-size: cover;
+      animation: pic1 39s;
+      position: absolute;
+    }
+
+    #text {
+      width: 100vw;
+      height: 100vh;
+      font-size: 3vw;
+      color: #000;
+      @include flex(flex, center, center);
+    }
+
+    #return {
+
+      width: 12.5vw;
+      height: 5vh;
+      position: absolute;
+      margin-right: -80vw;
+      margin-bottom: -95vh;
+      font-size: 2vw;
+      color: #fff;
+      animation: pic1 39s;
+      cursor: pointer;
+    }
+  }
+}
+
+@include mobile {
+  #root {
+
     width: 100vw;
     height: 100vh;
-    font-size: 3vw;
-    color: #000;
+    font-family: 'Nanum Pen Script', cursive;
+
     @include flex(flex, center, center);
-  }
 
-  #return {
+    #pic1 {
 
-    width: 12.5vw;
-    height: 5vh;
-    position: absolute;
-    margin-right: -80vw;
-    margin-bottom: -95vh;
-    font-size: 2vw;
-    color: #fff;
-    animation: pic1 39s;
-    cursor: pointer;
+      width: 100vw;
+      height: 100vh;
+      background: url(../pic/jerry.gif);
+      background-size: contain;
+      background-position: center center;
+      background-attachment: fixed;
+      background-repeat: no-repeat; 
+      animation: pic1 39s;
+      position: absolute;
+    }
+
+    #text {
+      width: 100vw;
+      height: 100vh;
+      font-size: 5vw;
+      margin: 5vw;
+      color: #000;
+      animation: pic2 39s;
+      @include flex(flex, center, center);
+    }
+
+    #return {
+
+      width: 25vw;
+      height: 5vh;
+      position: absolute;
+      font-size: 4vw;
+      color: #000;
+      margin-right: -60vw;
+      margin-bottom: -85vh;
+      animation: pic1 39s;
+    }
   }
 }

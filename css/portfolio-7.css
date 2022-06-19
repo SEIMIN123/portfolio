@@ -7,33 +7,70 @@
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-#root {
-  width: 100vw;
-  height: 100vh;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-#root > button {
-  width: 20vw;
-  height: 10vh;
-  background-color: #000;
-  font-size: 3vw;
-  font-family: "Times New Roman", Times, serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* PC (해상도 1024px)*/
+@media all and (min-width: 1024px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > button {
+    width: 20vw;
+    height: 10vh;
+    background-color: #000;
+    font-size: 3vw;
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > button:hover {
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: 5s;
+  }
 }
-#root > button:hover {
-  border: 1px solid white;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  transition: 5s;
+@media all and (max-width: 800px) {
+  #root {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #root > button {
+    width: 50vw;
+    height: 10vh;
+    background-color: #000;
+    font-size: 9vw;
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid white;
+    color: rgb(255, 255, 255);
+    -webkit-animation: fade 10s;
+            animation: fade 10s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

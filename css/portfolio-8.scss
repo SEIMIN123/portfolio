@@ -33,35 +33,65 @@
   }
 }
 
-*{margin: 0; padding: 0; box-sizing: border-box;}
-
-#root {
-
-  width: 100vw;
-  height: 100vh;
-  background-color: #ECE93B;
-
-
-  @include flex(flex,center,center);
-
-& > div {
-
-  width: 20vw;
-  height: 10vh;
-  color: #000;
-  background-color: #ECE93B;
-  font-family: 'Permanent Marker', cursive;
-  font-size: 3vw;
-  cursor: pointer;
-  @include flex(flex,center,center);
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-& > div:hover {
-  width: 50vw;
-  height: 10vh;
-  font-size: 7vw;
-  transition: 0.5s;
+@include pc {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECE93B;
+
+
+    @include flex(flex, center, center);
+
+    &>div {
+
+      width: 20vw;
+      height: 10vh;
+      color: #000;
+      background-color: #ECE93B;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 3vw;
+      cursor: pointer;
+      @include flex(flex, center, center);
+
+    }
+
+    &>div:hover {
+      width: 50vw;
+      height: 10vh;
+      font-size: 7vw;
+      transition: 0.5s;
+    }
+  }
 }
 
+@include mobile {
+  #root {
+
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECE93B;
+
+
+    @include flex(flex, center, center);
+
+    &>div {
+
+      width: 100vw;
+      height: 10vh;
+      color: #000;
+      background-color: #ECE93B;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 13vw;
+      transition: 0.5s;
+      @include flex(flex, center, center);
+
+    }
+  }
 }
