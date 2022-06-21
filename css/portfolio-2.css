@@ -85,10 +85,10 @@
     align-items: center;
   }
   #root .img {
-    width: 75vw;
-    height: 38.5vh;
+    width: 80vw;
+    height: 50vh;
     background: url(../pic/moonsolo.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@
   #root .img > h1 {
     width: 80vw;
     height: 8vh;
-    font-size: 10vw;
+    font-size: 9vw;
     margin-top: -10vh;
     color: rgb(255, 255, 255);
     font-family: "Times New Roman", Times, serif;
