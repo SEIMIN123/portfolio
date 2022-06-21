@@ -106,8 +106,8 @@
     width: 100vw;
     height: 100vh;
     background: url(../pic/jerry.gif);
-    background-size: contain;
-    background-position: center center;
+    background-size: cover;
+    background-position: -77vw center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     -webkit-animation: pic1 39s;
@@ -120,8 +120,8 @@
     font-size: 6vw;
     margin: 5vw;
     color: #000;
-    -webkit-animation-iteration-count: pic2 39s;
-            animation-iteration-count: pic2 39s;
+    -webkit-animation: pic2 39s;
+            animation: pic2 39s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +131,7 @@
     height: 5vh;
     position: absolute;
     font-size: 4vw;
-    color: #000;
+    color: #fff;
     margin-right: -60vw;
     margin-bottom: -85vh;
     -webkit-animation: pic1 39s;

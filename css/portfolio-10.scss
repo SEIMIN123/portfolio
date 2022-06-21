@@ -123,8 +123,8 @@
       width: 100vw;
       height: 100vh;
       background: url(../pic/jerry.gif);
-      background-size: contain;
-      background-position: center center;
+      background-size: cover;
+      background-position: -77vw center;
       background-attachment: fixed;
       background-repeat: no-repeat; 
       animation: pic1 39s;
@@ -137,7 +137,7 @@
       font-size: 6vw;
       margin: 5vw;
       color: #000;
-      animation-iteration-count: pic2 39s;
+      animation: pic2 39s;
       @include flex(flex, center, center);
     }
 
@@ -147,7 +147,7 @@
       height: 5vh;
       position: absolute;
       font-size: 4vw;
-      color: #000;
+      color: #fff;
       margin-right: -60vw;
       margin-bottom: -85vh;
       animation: pic1 39s;
