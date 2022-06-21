@@ -179,7 +179,7 @@
       font-size: 5vw;
       white-space: pre;
       color: #fff;
-      animation: fadein 10s ease-in-out;
+      animation: fadein1 10s ease-in-out;
       @include flex(flex, flex-start, center);
     }
 
@@ -191,7 +191,7 @@
       font-family: 'Times New Roman', Times, serif;
       font-size: 5vw;
       color: #fff;
-      animation: fadein 10s ease-in-out;
+      animation: fadein2 10s ease-in-out;
       @include flex(flex, flex-start, center);
     }
   }
