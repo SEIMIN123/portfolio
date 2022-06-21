@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -24,27 +23,17 @@
     opacity: 1;
   }
 }
-
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
   #root {
     width: 100vw;
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-color: #000;
     border: 1px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .text {
     width: 23vw;
@@ -61,52 +50,35 @@
     height: 30vw;
     border: 5px solid #fff;
     margin: 10px;
-    color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    color: rgb(0, 0, 0);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .box > h1 {
     font-size: 2vw;
   }
   #root .box:hover {
-    border: 5px solid #4b4b4b;
-    -webkit-transition: 5s;
+    border: 5px solid rgb(75, 75, 75);
     transition: 5s;
-    color: white;
+    color: rgb(255, 255, 255);
   }
 }
-
 @media all and (max-width: 800px) {
   #root {
     width: 100vw;
     height: 100vh;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-color: #000;
     border: 1px solid black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .text {
     width: 23vw;
     height: 7vw;
-    margin-left: -53vw;
+    margin-left: -57vw;
     border: 1px solid black;
   }
   #root .text > h1 {
@@ -120,21 +92,15 @@
     height: 30vw;
     border: 5px solid #fff;
     margin: 10px;
-    color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    color: rgb(0, 0, 0);
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root .box > h1 {
     font-size: 2.9vw;
     -webkit-animation: fade 10s;
             animation: fade 10s;
-    color: white;
+    color: rgb(255, 255, 255);
   }
 }

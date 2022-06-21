@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
@@ -24,81 +23,54 @@
     opacity: 1;
   }
 }
-
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
   #root {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root > button {
     width: 20vw;
     height: 10vh;
     background-color: #000;
     font-size: 3vw;
-    font-family: 'Times New Roman', Times, serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    font-family: "Times New Roman", Times, serif;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root > button:hover {
     border: 1px solid white;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
-    -webkit-transition: 5s;
     transition: 5s;
   }
 }
-
 @media all and (max-width: 800px) {
   #root {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   #root > button {
-    width: 50vw;
+    width: 60vw;
     height: 10vh;
     background-color: #000;
     font-size: 9vw;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     border: 1px solid white;
-    color: white;
+    color: rgb(255, 255, 255);
     -webkit-animation: fade 10s;
             animation: fade 10s;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 }

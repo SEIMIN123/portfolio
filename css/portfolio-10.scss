@@ -134,10 +134,10 @@
     #text {
       width: 100vw;
       height: 100vh;
-      font-size: 5vw;
+      font-size: 6vw;
       margin: 5vw;
       color: #000;
-      animation: pic2 39s;
+      animation-iteration-count: pic2 39s;
       @include flex(flex, center, center);
     }
 

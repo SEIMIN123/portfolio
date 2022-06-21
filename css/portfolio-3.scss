@@ -151,11 +151,12 @@
 
     .cir {
 
-      width: 60%;
-      height: 35%;
+      width: 79%;
+      height: 40%;
       border-radius: 30vw;
       background: url(../pic/profile.jpg);
       background-size: contain;
+      margin-bottom: -8vh;
       @include flex(flex, center, center);
     }
 
@@ -165,7 +166,7 @@
       height: 50vh;
       font-size: 7vw;
       color: #fff;
-      margin-top: -4vh;
+      margin-bottom: -4vh;
       animation: fade 10s;
       flex-direction: column;
 
