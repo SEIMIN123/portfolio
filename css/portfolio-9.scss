@@ -89,6 +89,9 @@
     height: 100vh;
     background: url(../pic/31.gif);
     background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     flex-direction: column;
     @include flex(flex, flex-start, flex-start);
 
