@@ -4,6 +4,7 @@ const content ="이로써 저의 포트폴리오는 끝이 났습니다.``아직
 
 const text = document.getElementById('text');
 text.style.textAlign = "center";
+
 let i = 0;
 
 function typing() {
