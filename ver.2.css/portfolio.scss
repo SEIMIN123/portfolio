@@ -76,7 +76,7 @@
   #root {
 
     width: 100vw;
-    height: 600vh;
+    height: 700vh;
     background-color: #000;
     background: url(../pic/star.jpg);
     background-size: cover;
@@ -99,7 +99,7 @@
       background-attachment: fixed;
       animation: img 300s linear infinite;
       transform-origin: 50% 50%;
-      margin-top: -500vh;
+      margin-top: -600vh;
       @include flex(flex, center, center);
 
     }
@@ -110,7 +110,7 @@
       font-size: 1px;
       color: rgba(0, 0, 0, 0);
       font-family: 'Times New Roman', Times, serif;
-      margin-top: -500vh;
+      margin-top: -600vh;
       position: absolute;
       @include flex(flex, center, center);
 
@@ -144,7 +144,7 @@
       animation: img 300s linear infinite;
       transform-origin: 50% 50%;
       position: absolute;
-      margin-top: -300vh;
+      margin-top: -350vh;
       @include flex(flex, center, center);
 
     }
@@ -156,7 +156,7 @@
       color: rgba(0, 0, 0, 0);
       font-family: 'Times New Roman', Times, serif;
       position: absolute;
-      margin-top: -300vh;
+      margin-top: -350vh;
       @include flex(flex, center, center);
 
     }
@@ -278,7 +278,7 @@
       width: 23vw;
       height: 7vw;
       margin-left: -53vw;
-      margin-bottom: -250vh;
+      margin-bottom: -300vh;
       position: absolute;
     }
 
@@ -325,7 +325,7 @@
       height: 80vh;
       border: 1px solid white;
       position: absolute;
-      margin-bottom: -500vh;
+      margin-bottom: -600vh;
       @include flex(flex, center, flex-start);
 
 
