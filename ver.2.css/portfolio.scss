@@ -73,10 +73,11 @@
     display: none;
   }
 
+
   #root {
 
     width: 100vw;
-    height: 700vh;
+    height: 850vh;
     background-color: #000;
     background: url(../pic/star.jpg);
     background-size: cover;
@@ -88,7 +89,7 @@
     @include flex(flex, center, center);
 
 
-    .img {
+    .secone {
 
       width: 40vw;
       height: 80vh;
@@ -99,7 +100,7 @@
       background-attachment: fixed;
       animation: img 300s linear infinite;
       transform-origin: 50% 50%;
-      margin-top: -600vh;
+      margin-top: -750vh;
       @include flex(flex, center, center);
 
     }
@@ -110,8 +111,8 @@
       font-size: 1px;
       color: rgba(0, 0, 0, 0);
       font-family: 'Times New Roman', Times, serif;
-      margin-top: -600vh;
       position: absolute;
+      margin-top: -750vh;
       @include flex(flex, center, center);
 
     }
@@ -129,10 +130,9 @@
 
     //---------------------------------------------------------
 
-
     // Name
 
-    .img-1 {
+    .sectwo {
 
       width: 30vw;
       height: 75vh;
@@ -144,7 +144,7 @@
       animation: img 300s linear infinite;
       transform-origin: 50% 50%;
       position: absolute;
-      margin-top: -350vh;
+      margin-top: -550vh;
       @include flex(flex, center, center);
 
     }
@@ -156,7 +156,7 @@
       color: rgba(0, 0, 0, 0);
       font-family: 'Times New Roman', Times, serif;
       position: absolute;
-      margin-top: -350vh;
+      margin-top: -550vh;
       @include flex(flex, center, center);
 
     }
@@ -176,14 +176,15 @@
 
     // Profile
 
-    .box {
+    .secthree {
 
       width: 30%;
       height: 80%;
       flex-direction: column;
       border: 5px solid rgb(255, 255, 255);
       position: absolute;
-      margin-top: -100vh;
+      margin-top: -350vh;
+      filter: blur(1000px);
       @include flex(flex, center, center);
     }
 
@@ -221,9 +222,8 @@
       color: #fff;
     }
 
-    .box:hover {
-
-      transition: 1s;
+    .secthree:hover {
+      transition: 0.5s;
       border: 5px solid #fff;
       cursor: pointer;
       filter: blur(0px);
@@ -233,16 +233,16 @@
 
     // Education
 
-    .edu {
+    .secfour {
       width: 23vw;
       height: 7vw;
       margin-left: -53vw;
-      margin-bottom: -50vh;
+      margin-top: -250vh;
       position: absolute;
-
+      filter: blur(1000px);
     }
 
-    .edu>h1 {
+    .secfour>h1 {
 
       font-size: 5vw;
       color: #fff;
@@ -263,9 +263,9 @@
       font-size: 2vw;
     }
 
-    .edu:hover {
+    .secfour:hover {
 
-      transition: 1s;
+      transition: 0.5s;
       cursor: pointer;
       filter: blur(0px);
     }
@@ -274,15 +274,16 @@
 
     // Certificate
 
-    .cer {
+    .secfive {
       width: 23vw;
       height: 7vw;
       margin-left: -53vw;
-      margin-bottom: -300vh;
+      margin-top: -100vh;
       position: absolute;
+      filter: blur(1000px);
     }
 
-    .cer>h1 {
+    .secfive>h1 {
 
       font-size: 5vw;
       color: #fff;
@@ -306,9 +307,9 @@
       font-size: 2vw;
     }
 
-    .cer:hover {
+    .secfive:hover {
 
-      transition: 1s;
+      transition: 0.5s;
       cursor: pointer;
       filter: blur(0px);
 
@@ -318,19 +319,66 @@
 
     // Project-1
 
-
-    .set {
+    .secsix {
 
       width: 80vw;
       height: 80vh;
       border: 1px solid white;
       position: absolute;
-      margin-bottom: -600vh;
+      margin-bottom: -250vh;
       @include flex(flex, center, flex-start);
-
-
     }
     .project-1 {
+
+      width: 20vw;
+      height: 10vh;
+      background-color: #000;
+      color: #fff;
+      font-size: 3vw;
+      font-family: 'Times New Roman', Times, serif;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+        //---------------------------------------------------------
+
+    // Project-2
+
+    .secseven {
+
+      width: 80vw;
+      height: 80vh;
+      border: 1px solid white;
+      position: absolute;
+      margin-bottom: -450vh;
+      @include flex(flex, center, flex-start);
+    }
+    .project-2 {
+
+      width: 20vw;
+      height: 10vh;
+      background-color: #000;
+      color: #fff;
+      font-size: 3vw;
+      font-family: 'Times New Roman', Times, serif;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    //---------------------------------------------------------
+
+    // Project-3
+
+    .seceight {
+
+      width: 80vw;
+      height: 80vh;
+      border: 1px solid white;
+      position: absolute;
+      margin-bottom: -650vh;
+      @include flex(flex, center, flex-start);
+
+    }
+    .project-3 {
 
       width: 20vw;
       height: 10vh;

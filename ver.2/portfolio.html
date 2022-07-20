@@ -11,19 +11,19 @@
 
 <body>
   <div id="root">
-    <div class="img"></div>
-    <h1 class="pp">MY PORT FOLIO</h1>
 
+    <div class="secone"></div>
+    <h1 class="pp">MY PORT FOLIO</h1>
     <!------------------------------------------------------------->
 
-    <div class="img-1"></div>
+    <div class="sectwo"></div>
     <h1 class="name">LIM SUNG MIN<br>
       林 成 玟<br>
       セイミン</h1>
 
     <!------------------------------------------------------------->
 
-    <div class="box">
+    <div class="secthree">
       <div class="cir"></div>
       <h1 class="text">Since 28 Jul 1987<br><br>
         <p class="text1">P. +82 010)6418-5624</p>
@@ -32,7 +32,8 @@
     </div>
 
     <!------------------------------------------------------------->
-    <div class="edu">
+
+    <div class="secfour">
       <h1>Education</h1>
       <div class="school">
         <h1>
@@ -47,33 +48,79 @@
 
     <!------------------------------------------------------------->
 
-    <div class="cer">
+    <div class="secfive">
       <h1>Certificate</h1>
-    <div class="lin">
-      <h1>
-        2016. 1종 보통 운전면허<br><br>
+      <div class="lin">
+        <h1>
+          2016. 1종 보통 운전면허<br><br>
 
-        2020. 건설 기계 조종사 면허증<br><br>
-        
-        MUAYTHAI 4 degree<br><br>
-        
-        KICKBOXING level 3 leader<br><br>
-        
-        JIUJITSU Pupple Belt / 4 degree
+          2020. 건설 기계 조종사 면허증<br><br>
+
+          MUAYTHAI 4 degree<br><br>
+
+          KICKBOXING level 3 leader<br><br>
+
+          JIUJITSU Pupple Belt / 4 degree
         </h1>
+      </div>
     </div>
-  </div>
 
     <!------------------------------------------------------------->
 
-    <div class="set">
-  
-  <button class="project-1" type="button" onclick="location.href='https://seimin123.github.io/contents-OTT/' ">PROJECT-1</button>
-
+    <div class="secsix">
+      <button class="project-1" type="button"
+        onclick="location.href='https://seimin123.github.io/contents-OTT/' ">PROJECT-1</button>
     </div>
 
+    <!------------------------------------------------------------->
 
+    <div class="secseven">
+
+      <button class="project-2" type="button"
+        onclick="location.href='https://seimin123.github.io/contents-novel/' ">PROJECT-2</button>
+      </button>
+    </div>
+
+    <!------------------------------------------------------------->
+
+    <div class="seceight">
+
+      <button class="project-3" type="button"
+        onclick="location.href='https://seimin123.github.io/contents-music/'">PROJECT-3</div>
+    </button>
   </div>
+  <!------------------------------------------------------------->
+  </div>
+  <!------------------------------------------------------------->
+
+  <script>
+    const root = document.getElementById('root');
+    const one = document.querySelector('.secone');
+    const two = document.querySelector('.sectwo');
+    const three = document.querySelector('.secthree');
+    const four = document.querySelector('.secfour');
+    const five = document.querySelector('.secfive');
+    const six = document.querySelector('.secsix');
+    const seven = document.querySelector('.secseven');
+    const eight = document.querySelector('.seceight');
+
+    console.log(root.offsetHeight);
+
+    let data = 0;
+
+    window.addEventListener('wheel', () => {
+
+      data = data + root.offsetHeight;
+      console.log(data);
+
+      window.scrollTo({
+
+        top: data,
+        behavior: "smooth"
+      })
+    });
+  </script>
+
 </body>
 
 </html>

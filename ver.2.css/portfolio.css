@@ -57,7 +57,7 @@
   }
   #root {
     width: 100vw;
-    height: 700vh;
+    height: 850vh;
     background-color: #000;
     background: url(../pic/star.jpg);
     background-size: cover;
@@ -70,7 +70,7 @@
     justify-content: center;
     align-items: center;
   }
-  #root .img {
+  #root .secone {
     width: 40vw;
     height: 80vh;
     background: url(../pic/moonsolo.png);
@@ -81,7 +81,7 @@
     -webkit-animation: img 300s linear infinite;
             animation: img 300s linear infinite;
     transform-origin: 50% 50%;
-    margin-top: -600vh;
+    margin-top: -750vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,8 +92,8 @@
     font-size: 1px;
     color: rgba(0, 0, 0, 0);
     font-family: "Times New Roman", Times, serif;
-    margin-top: -600vh;
     position: absolute;
+    margin-top: -750vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,7 @@
     justify-content: center;
     align-items: center;
   }
-  #root .img-1 {
+  #root .sectwo {
     width: 30vw;
     height: 75vh;
     background: url(../pic/moonsolo.png);
@@ -121,7 +121,7 @@
             animation: img 300s linear infinite;
     transform-origin: 50% 50%;
     position: absolute;
-    margin-top: -350vh;
+    margin-top: -550vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +133,7 @@
     color: rgba(0, 0, 0, 0);
     font-family: "Times New Roman", Times, serif;
     position: absolute;
-    margin-top: -350vh;
+    margin-top: -550vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,13 +149,14 @@
     justify-content: center;
     align-items: center;
   }
-  #root .box {
+  #root .secthree {
     width: 30%;
     height: 80%;
     flex-direction: column;
     border: 5px solid rgb(255, 255, 255);
     position: absolute;
-    margin-top: -100vh;
+    margin-top: -350vh;
+    filter: blur(1000px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,20 +191,21 @@
     font-size: 2vw;
     color: #fff;
   }
-  #root .box:hover {
-    transition: 1s;
+  #root .secthree:hover {
+    transition: 0.5s;
     border: 5px solid #fff;
     cursor: pointer;
     filter: blur(0px);
   }
-  #root .edu {
+  #root .secfour {
     width: 23vw;
     height: 7vw;
     margin-left: -53vw;
-    margin-bottom: -50vh;
+    margin-top: -250vh;
     position: absolute;
+    filter: blur(1000px);
   }
-  #root .edu > h1 {
+  #root .secfour > h1 {
     font-size: 5vw;
     color: #fff;
   }
@@ -220,19 +222,20 @@
   #root .school > h1 {
     font-size: 2vw;
   }
-  #root .edu:hover {
-    transition: 1s;
+  #root .secfour:hover {
+    transition: 0.5s;
     cursor: pointer;
     filter: blur(0px);
   }
-  #root .cer {
+  #root .secfive {
     width: 23vw;
     height: 7vw;
     margin-left: -53vw;
-    margin-bottom: -300vh;
+    margin-top: -100vh;
     position: absolute;
+    filter: blur(1000px);
   }
-  #root .cer > h1 {
+  #root .secfive > h1 {
     font-size: 5vw;
     color: #fff;
     right: -51.5vw;
@@ -251,22 +254,62 @@
   #root .lin > h1 {
     font-size: 2vw;
   }
-  #root .cer:hover {
-    transition: 1s;
+  #root .secfive:hover {
+    transition: 0.5s;
     cursor: pointer;
     filter: blur(0px);
   }
-  #root .set {
+  #root .secsix {
     width: 80vw;
     height: 80vh;
     border: 1px solid white;
     position: absolute;
-    margin-bottom: -600vh;
+    margin-bottom: -250vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
   }
   #root .project-1 {
+    width: 20vw;
+    height: 10vh;
+    background-color: #000;
+    color: #fff;
+    font-size: 3vw;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  #root .secseven {
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid white;
+    position: absolute;
+    margin-bottom: -450vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #root .project-2 {
+    width: 20vw;
+    height: 10vh;
+    background-color: #000;
+    color: #fff;
+    font-size: 3vw;
+    font-family: "Times New Roman", Times, serif;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  #root .seceight {
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid white;
+    position: absolute;
+    margin-bottom: -650vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #root .project-3 {
     width: 20vw;
     height: 10vh;
     background-color: #000;
