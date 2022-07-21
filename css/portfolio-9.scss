@@ -81,7 +81,11 @@
   }
 
 }
+body::-webkit-scrollbar {
 
+  width: 0;
+  display: none;
+}
 @include pc {
   #root {
 
@@ -103,7 +107,7 @@
 
     .text {
 
-      width: 40vw;
+      width: 100vw;
       height: 20vh;
       text-align: left;
       font-family: 'Times New Roman', Times, serif;
@@ -116,7 +120,7 @@
 
     .text1 {
 
-      width: 40vw;
+      width: 100vw;
       height: 30vh;
       text-align: left;
       font-family: 'Times New Roman', Times, serif;
@@ -128,7 +132,7 @@
 
     .text2 {
 
-      width: 40vw;
+      width: 100vw;
       height: 20vh;
       font-family: 'Times New Roman', Times, serif;
       font-size: 2vw;

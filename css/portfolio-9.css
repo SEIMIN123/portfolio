@@ -79,6 +79,11 @@
     opacity: 1;
   }
 }
+body::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
 /* PC (해상도 1024px)*/
 @media all and (min-width: 1024px) {
   #root {
@@ -99,7 +104,7 @@
     margin-left: 10vw;
   }
   #root .text {
-    width: 40vw;
+    width: 100vw;
     height: 20vh;
     text-align: left;
     font-family: "Times New Roman", Times, serif;
@@ -112,7 +117,7 @@
     align-items: center;
   }
   #root .text1 {
-    width: 40vw;
+    width: 100vw;
     height: 30vh;
     text-align: left;
     font-family: "Times New Roman", Times, serif;
@@ -125,7 +130,7 @@
     align-items: center;
   }
   #root .text2 {
-    width: 40vw;
+    width: 100vw;
     height: 20vh;
     font-family: "Times New Roman", Times, serif;
     font-size: 2vw;
