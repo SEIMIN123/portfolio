@@ -63,14 +63,15 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
   }
-  #root .img > h1 {
+  #root .text {
     width: 100%;
     height: 8vw;
     font-size: 1px;
+    position: absolute;
     color: rgba(0, 0, 0, 0);
     font-family: "Times New Roman", Times, serif;
   }
-  #root .img > h1:hover {
+  #root .text:hover {
     font-size: 4vw;
     text-align: center;
     cursor: pointer;
