@@ -172,7 +172,9 @@ body::-webkit-scrollbar {
       font-family: 'Times New Roman', Times, serif;
       font-size: 5vw;
       color: #fff;
-      animation: fadein 10s ease-in-out;
+      position: absolute;
+      margin-top: -10vh;
+      // animation: fadein 10s ease-in-out;
       @include flex(flex, flex-start, center);
 
     }
@@ -185,8 +187,10 @@ body::-webkit-scrollbar {
       font-family: 'Times New Roman', Times, serif;
       font-size: 5vw;
       white-space: pre;
+      position: relative;
+      bottom: -10vh;
       color: #fff;
-      animation: fadein1 10s ease-in-out;
+      // animation: fadein1 10s ease-in-out;
       @include flex(flex, flex-start, center);
     }
 
@@ -197,8 +201,10 @@ body::-webkit-scrollbar {
       text-align: left;
       font-family: 'Times New Roman', Times, serif;
       font-size: 5vw;
+      position: relative;
+      bottom: -20vh;
       color: #fff;
-      animation: fadein2 10s ease-in-out;
+      // animation: fadein2 10s ease-in-out;
       @include flex(flex, flex-start, center);
     }
   }
