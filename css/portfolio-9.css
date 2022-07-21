@@ -171,6 +171,8 @@ body::-webkit-scrollbar {
     color: #fff;
     position: absolute;
     margin-top: -10vh;
+    -webkit-animation: fadein 10s ease-in-out;
+            animation: fadein 10s ease-in-out;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -185,6 +187,8 @@ body::-webkit-scrollbar {
     position: relative;
     bottom: -10vh;
     color: #fff;
+    -webkit-animation: fadein1 10s ease-in-out;
+            animation: fadein1 10s ease-in-out;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -198,6 +202,8 @@ body::-webkit-scrollbar {
     position: relative;
     bottom: -20vh;
     color: #fff;
+    -webkit-animation: fadein2 10s ease-in-out;
+            animation: fadein2 10s ease-in-out;
     display: flex;
     justify-content: flex-start;
     align-items: center;
