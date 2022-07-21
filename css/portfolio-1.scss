@@ -133,11 +133,12 @@ body::-webkit-scrollbar {
 
     }
 
-    .img>h1 {
+    .text {
       width: 80vw;
       height: 10vh;
       font-size: 9vw;
       color: rgba(50,50,50);
+      position: absolute;
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
       animation: fade 5s;

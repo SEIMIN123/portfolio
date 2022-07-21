@@ -106,12 +106,13 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
   }
-  #root .img > h1 {
+  #root .text {
     width: 80vw;
     height: 8vh;
     font-size: 9vw;
     margin-top: -10vh;
     color: rgba(255, 255, 255, 0.5);
+    position: absolute;
     font-family: "Times New Roman", Times, serif;
     -webkit-animation: fade 5s;
             animation: fade 5s;
